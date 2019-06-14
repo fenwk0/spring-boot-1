@@ -1,4 +1,4 @@
-package com.mkyong;
+package com.macymoo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

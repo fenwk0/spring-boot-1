@@ -1,4 +1,4 @@
-package com.mkyong;
+package com.macymoo;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
