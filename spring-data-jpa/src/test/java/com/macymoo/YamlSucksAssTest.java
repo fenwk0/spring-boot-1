@@ -1,8 +1,14 @@
 package com.macymoo;
 
+import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.io.File;
+
+import static org.junit.Assert.assertEquals;
+
 
 public class YamlSucksAssTest {
 
@@ -20,10 +26,10 @@ public class YamlSucksAssTest {
 
     @Test
     public void test1() throws Exception {
-        System.out.println("YamlSucksAssTest.test1");
-        System.out.println("YamlSucksAssTest.setUp");
-        String json = yamlSucksAss.returnJSON("src/test/resources/nginx");
-        System.out.println("json = " + json);
+        String returnJSON = yamlSucksAss.returnJSON("src/test/resources/nginx");
+        File file = new File("src/test/resources/nginx.json");
+        String validJSON = FileUtils.readFileToString(file);
+        assertEquals("Yaml to Json failed.", validJSON, returnJSON);
     }
 
     @Test
