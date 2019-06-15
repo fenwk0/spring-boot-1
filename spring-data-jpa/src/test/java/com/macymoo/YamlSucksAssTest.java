@@ -4,13 +4,13 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class YamlSucksAssTest {
+
+    YamlSucksAss yamlSucksAss = new YamlSucksAss();
+
 
     @Before
     public void setUp() throws Exception {
-        System.out.println("YamlSucksAssTest.setUp");
     }
 
     @After
@@ -21,6 +21,9 @@ public class YamlSucksAssTest {
     @Test
     public void test1() throws Exception {
         System.out.println("YamlSucksAssTest.test1");
+        System.out.println("YamlSucksAssTest.setUp");
+        String json = yamlSucksAss.returnJSON("src/test/resources/nginx");
+        System.out.println("json = " + json);
     }
 
     @Test
