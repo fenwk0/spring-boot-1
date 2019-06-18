@@ -25,6 +25,11 @@ public class YamlSucksAssTest {
     }
 
     @Test
+    public void test2() throws Exception {
+        System.out.println("YamlSucksAssTest.test12");
+    }
+
+    @Test
     public void test1() throws Exception {
         String returnJSON = yamlSucksAss.returnJSON("src/test/resources/nginx");
         File file = new File("src/test/resources/nginx.json");
@@ -32,9 +37,5 @@ public class YamlSucksAssTest {
         assertEquals("Yaml to Json failed.", validJSON, returnJSON);
     }
 
-    @Test
-    public void test2() throws Exception {
-        System.out.println("YamlSucksAssTest.test12");
-    }
 
 }
