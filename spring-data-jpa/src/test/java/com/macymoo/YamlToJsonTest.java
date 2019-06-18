@@ -10,9 +10,9 @@ import java.io.File;
 import static org.junit.Assert.assertEquals;
 
 
-public class YamlSucksAssTest {
+public class YamlToJsonTest {
 
-    YamlSucksAss yamlSucksAss = new YamlSucksAss();
+    YamlToJson yamlToJson = new YamlToJson();
 
 
     @Before
@@ -21,17 +21,17 @@ public class YamlSucksAssTest {
 
     @After
     public void tearDown() throws Exception {
-        System.out.println("YamlSucksAssTest.tearDown");
+        System.out.println("YamlToJsonTest.tearDown");
     }
 
     @Test
     public void test2() throws Exception {
-        System.out.println("YamlSucksAssTest.test12");
+        System.out.println("YamlToJsonTest.test12");
     }
 
     @Test
     public void test1() throws Exception {
-        String returnJSON = yamlSucksAss.returnJSON("src/test/resources/nginx");
+        String returnJSON = yamlToJson.returnJSON("src/test/resources/nginx");
         File file = new File("src/test/resources/nginx.json");
         String validJSON = FileUtils.readFileToString(file);
         assertEquals("Yaml to Json failed.", validJSON, returnJSON);

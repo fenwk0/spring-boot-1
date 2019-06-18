@@ -5,7 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 import java.util.Map;
 
-public class JsonAintThatGreat {
+public class JsonToMap {
 
     ObjectMapper mapper = new ObjectMapper();
 

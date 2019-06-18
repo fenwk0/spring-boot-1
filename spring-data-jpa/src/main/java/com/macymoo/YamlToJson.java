@@ -10,7 +10,7 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class YamlSucksAss {
+public class YamlToJson {
 
     private static String readYamlFile(String ymlFilePath) throws IOException {
         String lineSeparator = System.getProperty("line.separator");

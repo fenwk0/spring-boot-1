@@ -4,9 +4,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class JsonAintThatGreatTest {
+public class JsonToMapTest {
 
-    JsonAintThatGreat jsonAintThatGreat = new JsonAintThatGreat();
+    JsonToMap jsonToMap = new JsonToMap();
 
     @Before
     public void setUp() throws Exception {
@@ -19,7 +19,7 @@ public class JsonAintThatGreatTest {
     @Test
     public void test2() throws Exception {
 
-        //jsonAintThatGreat.parseJson();
+        //jsonToMap.parseJson();
 
     }
 
